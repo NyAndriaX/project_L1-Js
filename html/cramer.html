@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../css/cramer.css">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <div class="component">
+
+        <div class="cramer">
+            <input type="text" id="a11" placeholder="a11" class="InputCramer">
+            <label>x</label>
+            <p class="cacul">+</p>
+            <input type="text" id="a12" placeholder="a12" class="InputCramer">
+            <label>y</label>
+            <p class="cacul">+</p>
+            <input type="text" id="a13" placeholder="a13" class="InputCramer">
+            <label>t</label>
+            <p class="cacul">=</p>
+            <input type="text" id="A"placeholder="A" class="InputCramer">
+        </div>
+        <div class="cramer">
+            <input type="text" id="a21" placeholder="a21" class="InputCramer">
+            <label>x</label>
+            <p class="cacul">+</p>
+            <input type="text" id="a22" placeholder="a22" class="InputCramer">
+            <label>y</label>
+            <p class="cacul">+</p>
+            <input type="text" id="a23" placeholder="a23" class="InputCramer">
+            <label>t</label>
+            <p class="cacul">=</p>
+            <input type="text" id="B"placeholder="B" class="InputCramer">
+        </div>
+        <div class="cramer">
+            <input type="text" id="a31" placeholder="a31" class="InputCramer">
+            <label>x</label>
+            <p class="cacul">+</p>
+            <input type="text" id="a32" placeholder="a32" class="InputCramer">
+            <label>y</label>
+            <p class="cacul">+</p>
+            <input type="text" id="a33" placeholder="a33" class="InputCramer">
+            <label>t</label>
+            <p class="cacul">=</p>
+            <input type="text" id="C"placeholder="C" class="InputCramer">
+        </div>
+        <div style="justify-content:center;display:grid;padding: 14px;">
+            <button class="button1" onclick="handleSend()">submit</button>
+        </div>
+
+
+       
+    </div>
+
+
+    <script src="../javascript/index.js"></script>
+    <script src="../javascript/cramer.js"></script>
+
+    <div class="dialogue" id="dialogue">
+        <div class="nav">
+            <div class="resultat">
+                <p id="message"></p>
+            </div>
+            <div>
+            <button onclick="fermer()">x</button>
+            </div>
+        </div>
+        <div class="contenue">
+            <p id="x"></p>
+            <p id="y"></p>
+            <p id="t"></p>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="myNav" class="overlay">
+        <div class="overlay-bar" id="baroverlay"></div>
+
+                   <div class="svg-wrapper init">
+                <svg style="height:60px;width:100%;text-align:center;">
+                <rect class="shape" height="60" width="320" />
+                <div class="text">
+                    <a href="../html/index.html" class="animation">Equation second dégré</a>
+                </div>
+                </svg>
+            </div>
+            <div class="svg-wrapper init">
+                <svg style="height:60px;width:100%;text-align:center;">
+                <rect class="shape" height="60" width="320" />
+                <div class="text">
+                    <a href="../html/animation.html" class="animation">Animation Publicitaire</a>
+                </div>
+                </svg>
+            </div>
+            <div class="svg-wrapper init">
+                <svg style="height:60px;width:100%;text-align:center;">
+                <rect class="shape" height="60" width="320" />
+                <div class="text">
+                    <a href="../html/cramer.html" style="margin-left:34%;" class="animation">cramer</a>
+                </div>
+                </svg>
+            </div>
+            <div class="svg-wrapper init">
+                <svg style="height:60px;width:100%;text-align:center;">
+                <rect class="shape" height="60" width="320" />
+                <div class="text">
+                    <a href="../html/resolution_EA.html"  class="animation">Electronique analogie</a>
+                </div>
+                </svg>
+            </div>
+      </div>
+      
+      <div id="bar" class="nav-container" onclick="openNav();myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      
+      <div class="logo-container">
+        <p id="logo-path"></p>
+      </div>
+    
+</body>
+</html>

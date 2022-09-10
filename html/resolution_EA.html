@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../css/resolution_EA.css">
+    <title>resolution</title>
+</head>
+<body>
+        
+    <div class="component">
+        <div class="analogie">
+            <div>
+            <div class="R">
+                <label>R1</label>
+                <p class="cacul">:</p>
+                <input type="text" id="R1" placeholder="Resistance R1"/>
+            </div>
+            <div class="R">
+                <label>R2</label>
+                <p class="cacul">:</p>
+                <input type="text" id="R2" placeholder="Resistance R2"/>
+            </div>
+            </div>
+            <div>
+                <div class="R">
+                    <label>R3</label>
+                    <p class="cacul">:</p>
+                    <input type="text" id="R3" placeholder="Resistance R3"/>
+                </div>
+                <div class="R">
+                    <label>R4</label>
+                    <p class="cacul">:</p>
+                    <input type="text" id="R4" placeholder="Resistance R4"/>
+                </div>
+            </div>
+        </div>
+        <div class="tension">
+            <label style="margin-right:12px ;">U</label>
+            <p class="cacul">:</p>
+            <input type="text" id="U" placeholder="Tension U"/>
+        </div>
+
+       <div style="justify-content:center;display:grid;padding: 14px;">
+        <button class="button1" onclick="handleSend()">submit</button>
+    </div>
+        
+    </div>
+
+
+    <script src="../javascript/index.js"></script>
+    <script src="../javascript/resolution_EA.js"></script>
+
+    <div class="dialogue" id="dialogue" style="margin-top: 83px;">
+        <div class="nav">
+            <div class="resultat">
+                <p id="message"></p>
+            </div>
+            <div>
+             <button onclick="fermer()">x</button>
+            </div>
+        </div>
+        <div class="contenue">
+
+               <div id="I1"></div>
+               <div id="I2"></div>
+               <div id="I3"></div>
+               <div id="I4"></div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="myNav" class="overlay">
+        <div class="overlay-bar" id="baroverlay"></div>
+        
+        <div class="svg-wrapper init">
+            <svg style="height:60px;width:100%;text-align:center;">
+            <rect class="shape" height="60" width="320" />
+            <div class="text">
+                <a href="../html/index.html" class="animation">Equation second dégré</a>
+            </div>
+            </svg>
+        </div>
+        <div class="svg-wrapper init">
+            <svg style="height:60px;width:100%;text-align:center;">
+            <rect class="shape" height="60" width="320" />
+            <div class="text">
+                <a href="../html/animation.html" class="animation">Animation Publicitaire</a>
+            </div>
+            </svg>
+        </div>
+        <div class="svg-wrapper init">
+            <svg style="height:60px;width:100%;text-align:center;">
+            <rect class="shape" height="60" width="320" />
+            <div class="text">
+                <a href="../html/cramer.html" style="margin-left:34%;" class="animation">cramer</a>
+            </div>
+            </svg>
+        </div>
+        <div class="svg-wrapper init">
+            <svg style="height:60px;width:100%;text-align:center;">
+            <rect class="shape" height="60" width="320" />
+            <div class="text">
+                <a href="../html/resolution_EA.html"  class="animation">Electronique analogie</a>
+            </div>
+            </svg>
+        </div>
+      </div>
+      
+      <div id="bar" class="nav-container" onclick="openNav();myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      
+      <div class="logo-container">
+        <p id="logo-path"></p>
+      </div>
+</body>
+</html>

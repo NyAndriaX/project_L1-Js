@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css"/>
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <div class="component1">
+
+        <div style="margin-bottom: 105px;margin-top:-221px;">
+            <input type="text" id="a" value="0"/>
+            <label>x²</label>
+            <p class="cacul">+</p>
+            <input type="text" id="b" value="0"/>
+            <label>x</label>
+            <p class="cacul">+</p>
+            <input type="text" id="c" value="0"/>
+            <p class="cacul">=</p>
+        </div>
+        <div style="justify-content:center;display:grid;padding: 14px;">
+            <button class="button1" onclick="handleClick()">submit</button>
+        </div>
+    </div>
+
+
+    <script src="../javascript/index.js"></script>
+
+    <div class="dialogue" id="dialogue">
+        <div class="nav">
+            <div class="resultat">
+                <p id="message"></p>
+            </div>
+            <div>
+            <button onclick="fermer()">x</button>
+            </div>
+        </div>
+        <div class="contenue">
+            <p id="x1"></p>
+            <p id="separation">et</p>
+            <p id="x2"></p>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="myNav" class="overlay">
+        <div class="overlay-bar" id="baroverlay"></div>
+
+            <div class="svg-wrapper init">
+                <svg style="height:60px;width:100%;text-align:center;">
+                <rect class="shape" height="60" width="320" />
+                <div class="text">
+                    <a href="../html/index.html" class="animation">Equation second dégré</a>
+                </div>
+                </svg>
+            </div>
+            <div class="svg-wrapper init">
+                <svg style="height:60px;width:100%;text-align:center;">
+                <rect class="shape" height="60" width="320" />
+                <div class="text">
+                    <a href="../html/animation.html" class="animation">Animation Publicitaire</a>
+                </div>
+                </svg>
+            </div>
+            <div class="svg-wrapper init">
+                <svg style="height:60px;width:100%;text-align:center;">
+                <rect class="shape" height="60" width="320" />
+                <div class="text">
+                    <a href="../html/cramer.html" style="margin-left:34%;" class="animation">cramer</a>
+                </div>
+                </svg>
+            </div>
+            <div class="svg-wrapper init">
+                <svg style="height:60px;width:100%;text-align:center;">
+                <rect class="shape" height="60" width="320" />
+                <div class="text">
+                    <a href="../html/resolution_EA.html"  class="animation">Electronique analogie</a>
+                </div>
+                </svg>
+            </div>
+           
+      </div>
+      
+      <div id="bar" class="nav-container" onclick="openNav();myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      
+      <div class="logo-container">
+        <p id="logo-path"></p>
+      </div>
+    
+</body>
+</html>
